@@ -1,0 +1,43 @@
+# ── Core (all phases) ──────────────────────────────────────────
+python-dotenv>=1.0.0          # Load .env files
+httpx>=0.27.0                 # Async HTTP client (better than requests for AI)
+pydantic>=2.7.0               # Data validation
+pydantic-settings>=2.3.0      # Settings from environment variables
+numpy>=1.26.0                 # Array operations, embeddings math
+pandas>=2.2.0                 # Data processing, analysis
+tqdm>=4.66.0                  # Progress bars
+
+# ── Phase 2 — ML Concepts ─────────────────────────────────────
+scikit-learn>=1.5.0           # ML algorithms
+matplotlib>=3.9.0             # Plotting
+
+# ── Phase 2 — Deep Learning ───────────────────────────────────
+# torch>=2.3.0                # PyTorch (install separately: https://pytorch.org)
+# transformers>=4.42.0        # HuggingFace transformers
+
+# ── Phase 3 — LLMs & APIs ─────────────────────────────────────
+openai>=1.35.0                # OpenAI API
+anthropic>=0.30.0             # Anthropic Claude API
+tiktoken>=0.7.0               # OpenAI tokenizer
+sentence-transformers>=3.0.0  # Open-source embeddings
+faiss-cpu>=1.8.0              # Local vector search
+langchain>=0.3.0              # LLM orchestration framework
+langchain-openai>=0.2.0       # LangChain OpenAI integration
+langchain-community>=0.3.0    # LangChain community integrations
+
+# ── Phase 4 — Production ──────────────────────────────────────
+fastapi>=0.115.0              # Web framework for AI APIs
+uvicorn[standard]>=0.30.0     # ASGI server
+gunicorn>=22.0.0              # Production process manager
+sqlalchemy>=2.0.0             # ORM
+aiosqlite>=0.20.0             # Async SQLite (dev/testing)
+asyncpg>=0.29.0               # Async PostgreSQL driver
+redis>=5.0.0                  # Redis client
+tenacity>=9.0.0               # Retry logic
+
+# ── Phase 5 — Advanced ────────────────────────────────────────
+# torch>=2.3.0                # Required for fine-tuning
+# peft>=0.12.0                # Parameter-efficient fine-tuning (LoRA)
+# datasets>=2.20.0            # HuggingFace datasets
+# accelerate>=0.32.0          # Multi-GPU training
+mlflow>=2.14.0                # Experiment tracking

@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Secrets — NEVER commit these
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.json
+secrets.json
+service_account.json
+
+# AI model files — too large for git
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.safetensors
+*.bin
+model_weights/
+checkpoints/
+*.mlmodel
+
+# Vector indexes
+*.faiss
+*.index
+chroma_db/
+.chroma/
+qdrant_storage/
+
+# Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Data files
+data/raw/
+data/processed/
+*.parquet
+*.arrow
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+*.swp
+
+# IDE
+.vscode/settings.json
+.idea/
+*.iml
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
